@@ -1,0 +1,373 @@
+<mat-toolbar class="subNav">
+  <div class="subNavWrap">
+    <div>
+      <img src="assets/img/icons/Bell.png" alt=""> Current page
+    </div>
+    <div>
+      <img src="assets/img/icons/2-Search.png" alt=""> Dummy1
+    </div>
+    <div>
+      <img src="assets/img/icons/3-Share.png" alt=""> Dummy text1
+    </div>
+  </div>
+</mat-toolbar>
+<!--Carousel Wrapper-->
+<mdb-carousel [isControls]="true" [animation]="'slide'">
+  <!--First slide-->
+  <mdb-slide *ngFor="let item of items" class="bannerSlid">
+    <img class="d-block w-100" src="{{item.name}}" alt="First slide">
+    <div class="bannerText">
+      {{item.text}}
+    </div>
+  </mdb-slide>
+
+</mdb-carousel>
+<!--/.Carousel Wrapper-->
+
+<div class="bannerForm">
+  <div class="bannerFormWrap z-depth-1">
+    <mat-radio-group class="col-md-4">
+      <mat-radio-button value="1">Option 1</mat-radio-button>
+      <mat-radio-button value="2">Option 2</mat-radio-button>
+    </mat-radio-group>
+    <form class="bannerFormInput col-md-8">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Lorem" value="">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Lipsum" value="">
+      </mat-form-field>
+      <button mat-raised-button color="primary">Get Started</button>
+    </form>
+  </div>
+</div>
+
+<div>
+  <mat-tab-group>
+    <mat-tab label="First">
+      <!--Carousel Wrapper-->
+      <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'" [animation]="'slide'">
+        <!--First slide-->
+        <mdb-slide>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+        </mdb-slide>
+        <!--/First slide-->
+        <!--Second slide-->
+        <mdb-slide>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(60).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(47).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(48).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+        </mdb-slide>
+        <!--/Second slide-->
+        <!--Third slide-->
+        <mdb-slide>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(51).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+        </mdb-slide>
+        <!--/Third slide-->
+      </mdb-carousel>
+      <!--/.Carousel Wrapper-->
+
+    </mat-tab>
+    <mat-tab label="Second">
+      <!--Carousel Wrapper-->
+      <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'" [animation]="'slide'">
+        <!--First slide-->
+        <mdb-slide>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+        </mdb-slide>
+        <!--/First slide-->
+        <!--Second slide-->
+        <mdb-slide>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(60).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(47).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(48).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+        </mdb-slide>
+        <!--/Second slide-->
+        <!--Third slide-->
+        <mdb-slide>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(51).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+        </mdb-slide>
+        <!--/Third slide-->
+      </mdb-carousel>
+      <!--/.Carousel Wrapper-->
+    </mat-tab>
+    <mat-tab label="Third">
+      <!--Carousel Wrapper-->
+      <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'" [animation]="'slide'">
+        <!--First slide-->
+        <mdb-slide>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+        </mdb-slide>
+        <!--/First slide-->
+        <!--Second slide-->
+        <mdb-slide>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(60).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(47).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(48).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+        </mdb-slide>
+        <!--/Second slide-->
+        <!--Third slide-->
+        <mdb-slide>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card">
+              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(51).jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary waves-light" mdbWavesEffect>Button</a>
+              </div>
+            </div>
+          </div>
+        </mdb-slide>
+        <!--/Third slide-->
+      </mdb-carousel>
+      <!--/.Carousel Wrapper-->
+    </mat-tab>
+  </mat-tab-group>
+</div>
